@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fify | IT Student &amp; Backend Developer</title>
+<meta name="description" content="Portfolio of Fify, a 4th-year IT student in Cebu City learning backend development and project management.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <a class="brand" href="#home">Fify<span>.</span></a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="links" aria-label="Toggle menu">☰</button>
+  <nav id="links" class="links" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+<section id="home" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Fify</h1>
+      <p class="lead">4th-year IT student at Cebu Eastern College, Cebu City. I'm learning backend development and project management, and I like building tools that are useful to real people.</p>
+      <p class="focus"><strong>Currently interested in:</strong> backend development, applied machine learning, assistive technology, and keeping a team's project organized.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">View my projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="avatar">
+      <img src="images/Asis.jpg" alt="Photo of Fify" width="600" height="632" onerror="this.remove()">
+      <span aria-hidden="true">F</span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="wrap">
+  <h2>About me</h2>
+  <div class="two">
+    <p>I'm a graduating Information Technology student in Cebu City, Philippines. In my capstone group I work as the <strong>Backend Developer and Project Manager</strong>, so I split my time between writing server-side code and keeping documents, sprints, and deadlines on track.</p>
+    <p>Before and alongside school, I worked as a freelance <strong>Customer Service Virtual Assistant on Upwork</strong>. That taught me to communicate clearly, respond reliably, and handle people's concerns patiently, skills I now use when working with my team.</p>
+  </div>
+</section>
+
+<section id="skills" class="wrap">
+  <h2>Skills</h2>
+  <p class="note">An honest look at where I am right now: <span class="dot s3"></span> comfortable <span class="dot s2"></span> working knowledge <span class="dot s1"></span> still learning</p>
+  <div class="skill-grid">
+    <article class="card">
+      <h3>Web</h3>
+      <ul>
+        <li><span class="dot s3"></span>HTML, CSS, JavaScript</li>
+        <li><span class="dot s2"></span>Browser localStorage apps</li>
+        <li><span class="dot s2"></span>Flask (Python) basics</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>Software</h3>
+      <ul>
+        <li><span class="dot s2"></span>C# / .NET 8 &amp; WPF</li>
+        <li><span class="dot s2"></span>SQLite databases</li>
+        <li><span class="dot s1"></span>CNN audio classification (Librosa)</li>
+      </ul>
+    </article>
+    <article class="card">
+      <h3>Project &amp; people</h3>
+      <ul>
+        <li><span class="dot s3"></span>Sprint planning &amp; meeting minutes</li>
+        <li><span class="dot s3"></span>Technical documentation</li>
+        <li><span class="dot s3"></span>Customer service &amp; communication</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="projects" class="wrap">
+  <h2>Projects</h2>
+  <div class="proj-grid">
+
+    <article class="card proj">
+      <div class="shot" role="img" aria-label="SuriGulat preview">
+        <img src="images/surigulat.png" alt="Screenshot of the SuriGulat alert interface" onerror="this.remove()">
+        <span>SuriGulat</span>
+      </div>
+      <h3>SuriGulat <small>Capstone project</small></h3>
+      <p>An ambient sound-to-visual and haptic alert system that helps people with hearing loss notice important sounds at home, such as alarms or doorbells. A sensor picks up the sound, a relay forwards it, and the user's phone shows a visual alert and vibrates. It is aligned with SDG 10 (Reduced Inequalities) and designed to run on existing hardware using only open-source tools.</p>
+      <p><strong>My contribution:</strong> Backend developer and project manager: server design (Flask and Flask-SocketIO relay, SQLite storage), sprint planning, and chapter documentation.</p>
+      <p class="tags"><span>Python</span><span>Flask</span><span>CNN / Librosa</span><span>SQLite</span></p>
+      <p class="status">Status: in development for our capstone defense.</p>
+    </article>
+
+    <article class="card proj">
+      <div class="shot" role="img" aria-label="Academic Task Manager preview">
+        <img src="images/task-manager.png" alt="Screenshot of the Academic Task Manager" onerror="this.remove()">
+        <span>Task Manager</span>
+      </div>
+      <h3>Academic Task Manager <small>Personal project</small></h3>
+      <p>A browser-based planner for school tasks, deadlines and files. Everything is saved in the browser's localStorage so changes persist after closing the page. I am reworking it into a more personal app with a music player and a file viewer for documents, PDFs and photos.</p>
+      <p><strong>My contribution:</strong> Designed and coded the whole app on my own.</p>
+      <p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>localStorage</span></p>
+      <p class="status">Status: being improved.</p>
+    </article>
+
+    <article class="card proj">
+      <div class="shot" role="img" aria-label="HEECMS preview">
+        <img src="images/heecms.png" alt="Screenshot of the HEECMS dashboard showing the electricity rate, daily and weekly consumption and cost cards, the Add Appliance form, and the appliance list" onerror="this.remove()">
+        <span>HEECMS</span>
+      </div>
+      <h3>HEECMS <small>Thesis project</small></h3>
+      <p>Household Electrical Energy Consumption Monitoring System, a Windows desktop app that helps households see where their electricity goes. Users log in, add appliances with their wattage and daily hours of use, and the app calculates daily and weekly kWh, estimated cost in pesos at an adjustable rate per kWh, and each appliance's percentage share of the total. It also gives energy-saving suggestions based on usage patterns, such as long running hours or high-power devices.</p>
+      <p><strong>My contribution:</strong> Built the WPF desktop app using the MVVM pattern, with user login and registration, role-based user management, and SQLite storage through Entity Framework Core.</p>
+      <p class="tags"><span>C#</span><span>.NET 8</span><span>WPF</span><span>SQLite</span><span>EF Core</span></p>
+      <p class="status">Status: working version completed.</p>
+    </article>
+
+  </div>
+</section>
+
+<section id="contact" class="wrap contact">
+  <h2>Contact</h2>
+  <p>I'm open to feedback, collaboration, and entry-level opportunities. The best way to reach me is by email.</p>
+  <div class="cta">
+    <a class="btn" id="emailLink" href="mailto:asissimon949@gmail.com">Email me</a>
+    <a class="btn ghost" id="githubLink" href="https://github.com/fifyreee" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+</main>
+
+<footer><p>© <span id="year"></span> Fify · Cebu City, Philippines</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
